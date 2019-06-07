@@ -1,1 +1,23 @@
 // Mixins Here
+
+.row {
+    display: flex; 
+    flex-direction: row; 
+}
+
+.column {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.buttons-dimensions(@bHeight, @bWidth, @topPadding) {
+    height: @bHeight; 
+    width: @bWidth;  
+    padding-top: @topPadding; 
+}
+
+.buttons-color(@bgColor, @textColor, @bRadius) {
+    background: @bgColor; 
+    color: @textColor;
+    border-radius: @bRadius;  
+}
