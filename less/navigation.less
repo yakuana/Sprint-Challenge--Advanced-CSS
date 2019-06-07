@@ -1,35 +1,45 @@
 // Navigation code here
 
-header { 
-    border: @border-size red; 
+.header { 
+    border-bottom: @border-size @nav-border; 
+    background: @nav-bg; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
 
     .header-container {
-        border: @border-size orange;
+        // border: @border-size orange;
         width: 800px; 
+        height: 90px; 
+        .column(); 
+        justify-content: space-between; 
         margin-left: auto; 
         margin-right: auto;  
 
         h1 {
-            border: @border-size purple; 
+            // border: @border-size purple; 
             font-size: 5rem; 
             text-align: center; 
             
         }
 
         nav {
-            border: @border-size gold; 
-            font-size: 2rem; 
+            // border: @border-size gold; 
+            font-size: 1.6rem; 
+            .row(); 
+            justify-content: space-evenly; 
+            width: 70%;
             margin-left: auto; 
-            margin-right: auto;  
+            margin-right: auto;
         }
 
         nav a {
-            border: @border-size red; 
+            // border: @border-size green; 
+            color: @nav-font; 
             text-decoration: none; 
         }
 
-        // nav a:hover {
-        //     color: lighten(white, 50%);
-        // }
+        nav a:hover {
+            color: darken(@nav-font, 50%);
+        }
     }
 }

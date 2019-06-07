@@ -168,29 +168,40 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  border: 1px solid red;
+.header {
+  border-bottom: 1px solid #F1F1F1;
+  background: #F6F6F6;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-header .header-container {
-  border: 1px solid orange;
+.header .header-container {
   width: 800px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
 }
-header .header-container h1 {
-  border: 1px solid purple;
+.header .header-container h1 {
   font-size: 5rem;
   text-align: center;
 }
-header .header-container nav {
-  border: 1px solid gold;
-  font-size: 2rem;
+.header .header-container nav {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
-header .header-container nav a {
-  border: 1px solid red;
+.header .header-container nav a {
+  color: #454A59;
   text-decoration: none;
+}
+.header .header-container nav a:hover {
+  color: #000000;
 }
 footer {
   color: #22283B;
