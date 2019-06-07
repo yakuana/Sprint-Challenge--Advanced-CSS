@@ -168,6 +168,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  border: 1px solid red;
+}
+header .header-container {
+  border: 1px solid orange;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .header-container h1 {
+  border: 1px solid purple;
+  font-size: 5rem;
+  text-align: center;
+}
+header .header-container nav {
+  border: 1px solid gold;
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .header-container nav a {
+  border: 1px solid red;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -228,6 +252,11 @@ footer {
   padding-top: 8px;
   background: #22283A;
   color: #F6F7F8;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F7F8;
+  color: #22283A;
   border-radius: 5px;
 }
 .home .walk .walk-img {

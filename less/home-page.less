@@ -62,7 +62,11 @@
         text-align: center;
 
         .buttons-dimensions(35px, 32%, 8px);
-        .buttons-color(@btn-bg-color, @porcelain, 5px)
+        .buttons-color(@btn-bg-color, @porcelain, 5px);
+      }
+
+      .btn:hover {
+        .buttons-color(@porcelain, @btn-bg-color, 5px);
       }
     }
 
