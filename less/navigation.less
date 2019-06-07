@@ -15,11 +15,19 @@
         margin-left: auto; 
         margin-right: auto;  
 
+        @media @phone {
+            width: 500px;  
+            height: 70px;
+        }
+
         h1 {
             // border: @border-size purple; 
             font-size: 5rem; 
             text-align: center; 
             
+            @media @phone {
+                font-size: 4rem; 
+            }
         }
 
         nav {
@@ -30,6 +38,10 @@
             width: 70%;
             margin-left: auto; 
             margin-right: auto;
+
+            @media @phone {
+                width: 90%; 
+            }
         }
 
         nav a {
@@ -39,7 +51,7 @@
         }
 
         nav a:hover {
-            color: darken(@nav-font, 50%);
+            color: darken(@nav-font, 70%);
         }
     }
 }
